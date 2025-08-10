@@ -4,78 +4,126 @@ body {
   font-family: 'Poppins';
 }
 
-header > div {
+/* Header layout */
+header {
   padding: 0 25px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+flex-direction: column;
+    gap: 20px;
   border-bottom: 1px solid lightgray;
+  background-color: white;
 }
 
-nav {
-  width: 600px;
+/* top section layout */
+.top-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
+/* Nifty Penguin Magic logo */
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 0.5rem;
+}
+
+/* Nav */
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
 }
 
 nav a {
   text-decoration: none;
   color: black;
+  font-size: 14px;
 }
 
-.blackHeart {
-  width: 20px;
-  margin-right: 1rem;
+/* Right section layout */
+.bottom-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
-form label {
-  color: rgba(0, 0, 0, 0.05);
+.npm-logo {
+  width: 60px;
 }
 
-form input {
-  color: rgba(0, 0, 0, 0.05);
+/* Search form */
+.search-form {
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 6px 10px;
+  border-radius: 4px;
+  flex-grow: 1;
 }
 
-form button {
+.search-icon {
+  width: 16px;
+  margin-right: 6px;
+  opacity: 0.5;
+}
+
+.search-form input {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 4px 8px;
+  color: black;
+  width: 200px;
+  flex: 1;
+}
+
+.search-form button {
   background-color: #fb3e44;
   color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
 }
+
+/* Auth links */
 .auth-links {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 
-/* Common button styles */
 .auth-links .btn {
-  padding: 8px 16px;
-  cursor: pointer;
+  font-size: 14px;
+  padding: 6px 14px;
   font-weight: bold;
   border-radius: 4px;
-  font-size: 14px;
-  text-decoration: none;
+  cursor: pointer;
 }
 
-/* Join button – red background, white text */
+/* Join button – white bg, black text, border */
 .auth-links .join {
-  background-color: #fcf8f8;
-  color: rgb(15, 13, 13);
-  border: 1px solid #121111;
+  background-color: white;
+  color: black;
+  border: 1px solid #888;
 }
 
-/* Log in button – transparent with border */
+/* Log in button – transparent, no border */
 .auth-links .login {
   background: none;
   color: black;
   border: none;
-  padding: 8px 16px;
 }
 
-  
+/* Main section */
 .main-section {
   text-align: center;
   margin: 50px auto 0;

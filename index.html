@@ -18,38 +18,43 @@ auditing features built into the npm client, a zero-friction way to make open so
 </head>
 
 <body>
-  <header>
-  <div>
-    <div>
+<header>
+  <!-- top section: heart and nav -->
+  <div class="top-header">
+    <div class="logo-title">
       <img class="blackHeart" src="images/black-heart.png" alt="black heart" />
-      <span> Nifty Penguin Magic </span>
+      <span>Nifty Penguin Magic</span>
     </div>
-    <!-- Nav/Link buttons -->
+
     <nav>
       <ul>
-        <li><a href="#"> npm Enterprise </a></li>
-        <li><a href="#"> Products </a></li>
-        <li><a href="#"> Solutions </a></li>
-        <li><a href="#"> Resources </a></li>
-        <li><a href="#"> Docs </a></li>
-        <li><a href="#"> Support </a></li>
+        <li><a href="#">npm Enterprise</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Solutions</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Docs</a></li>
+        <li><a href="#">Support</a></li>
       </ul>
     </nav>
   </div>
-<!-- logo/form -->
-  <div>
-    <img class="npm logo" src="images/npm-logo.png" alt="npm logo" />
-<img class= "magnifying glass" src="images/magnifying-glass.png" alt="magnifying glass" />
-    <form action="/search">
-  <input type="text" placeholder="Search..." name="search" />
-  <button type="submit">submit</button>
-</form>
-<!-- Buttons -->
-<div class="auth-links">
-  <button class="btn join">Join</button>
-  <button class="btn login">Log in</button>
+<br>
+  <!-- bottom section: logo + search + auth -->
+  <div class="bottom-header">
+    <img class="npm-logo" src="images/npm-logo.png" alt="npm logo" />
+
+    <form class="search-form" action="/search">
+      <img class="search-icon" src="images/magnifying-glass.png" alt="magnifying glass" />
+      <input type="text" placeholder="Search packages" name="search" />
+      <button type="submit">Search</button>
+    </form>
+
+    <div class="auth-links">
+      <button class="btn join">Join</button>
+      <button class="btn login">Log in</button>
+    </div>
   </div>
-  </header>
+</header>
+
   <!-- Section 1-->
     <main>
      <section class="main-section">
